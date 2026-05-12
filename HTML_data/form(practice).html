@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-practice</title>
+</head>
+<body>
+    <h1>Form practice</h1>
+    <p><strong>Note:</strong> I will be using inline styles eventhough i haven't learnt CSS, because it would look vood with css only</p>
+    <section style=" border: solid grey; height: 300px;  border-radius: 10px; background-color: cornflowerblue;">
+        <h2>Facebook login:</h2>
+        <form action="https://www.facebook.com/" target="_blank"
+                      style="display: flex; justify-content: center;">
+            <fieldset style="border: solid black; border-radius: 10px; border-width: 3px; width: 17%; height: 130px; background-color: aliceblue;">
+
+                <legend style="border: solid black; border-width: 3px; background-color: blue; color:aliceblue; text-align: center;">
+                    Facebook login
+                </legend>
+
+                <label for="email">Email:</label><br>
+                <input required type="email" name="email" id="email" placeholder="example@gmail.com" 
+                       style="background-color: lightskyblue;">
+
+                <label for="password">Password:</label><br>
+                <input required type="password" name="password" id="password" placeholder="eg., abcd1234" 
+                        style="background-color: lightskyblue;">
+
+                <button style="border: solid; background-color: blue; color:aliceblue; border-radius: 10px; width: 100%;">
+                    login
+                </button>
+
+            </fieldset>
+        </form>
+    </section>
+    <section style="border: solid grey; border-radius: 5px;">
+        <h2>Registration form:</h2>
+        <div style="border: solid grey; padding: 5%;">
+            <h2 style="text-align: center;">
+                Registration Form
+            </h2>
+            <p style="text-align: center;">
+                Please fill out this form to register.
+            </p>
+            <form action="https://animesuges.life/" target="_blank">
+                <!--Name-->
+                <div style="display:flex; gap: 10%;">
+                    <label for="first-name" style="font-weight: bold; width:45%">
+                    First Name:
+                </label>
+                <label for="last-name" style="font-weight: bold; width:45%">
+                    Last Name:
+                </label>
+                </div>
+                <div style="display: flex; gap: 10%; padding-bottom: 2%;">
+                    <input required type="text" id="first-name" name="first-name" placeholder="eg., Sudip"
+                           style="width: 45%;">
+                    <input required type="text" id="last-name" name="last-name" placeholder="eg., Patra"
+                           style=" width: 45%;">
+                </div>
+                
+                <!--Email-->
+                <div style="padding-bottom: 2%;">
+                    <label for="email" style="font-weight: bold;">
+                    Email:
+                </label>
+                <input required type="email" name="email" id="email" placeholder="example@gmail.com"
+                       style="width: 100%">
+                </div>
+                
+                <!--Ph number-->
+                <div style="padding-bottom: 2%;">
+                    <label for="ph-number" style="font-weight: bold;">
+                    Phone Number:
+                </label>
+                <input required type="tel" name="ph-number" id="ph-number" placeholder="8956473760"
+                       style="width: 100%"> 
+                </div>     
+
+                <!--Date-->
+                <div style="padding-bottom: 2%;">
+                    <label for="date" style="font-weight: bold;">
+                    Date:
+                </label>
+                <input required type="date" name="date" id="date"
+                       style="width: 100%">
+                </div>
+                
+                <!--Gender-->
+                <div style="padding-bottom: 2%;">
+                    <label style="font-weight: bold;">Gender:</label>   
+                    <input required type="radio" name="gender" id="male-gender" value="male">
+                    <label for="male-gender">Male</label> 
+                    <input required type="radio" name="gender" id="female-gender" value="female">
+                    <label for="female-gender">Female</label> 
+                </div>
+
+                <!--Country-->
+                <div style="padding-bottom: 2%;">
+                    <label for="country">
+                        Country:
+                    </label>
+                    <select required name="country" id="country" 
+                            style="width:100%;">
+                        <option value="">--SELECT COUNTRY--</option>
+                        <option value="india">INDIA</option>
+                        <option value="usa">UNITED STATES OF AMERICA</option>
+                        <option value="australia">AUSTRALIA</option>
+                        <option value="canada">CANADA</option>
+                        <option value="uk">UNITED KINGDOM</option>
+                    </select>
+                </div>
+
+                <!--Address-->
+                <div style="padding-bottom: 2%;">
+                    <label for="address" style="font-weight: bold;">Address:</label>
+                    <input required type="text" name="address" id="address" placeholder="eg., flat no.123 abcd street, city"
+                            style="width: 100%">
+                </div>
+
+                <button style="width:100%">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>
+    <section style="border: solid grey; border-radius: 10px;">
+        <h2>Feedback form:</h2>
+        <section style="color:white; background-color: darkslateblue; padding: 2%;">
+            <h2>Customer Service Form</h2>
+        </section>
+        <section>
+            <div>
+                <fieldset>
+                    <legend>1. How would you like to rate your experience with our customer service?</legend>
+                    <label required for="very-positive"><input type="radio" id="very-positive" name="ratings" value="very-positive">Very Positive</label>
+                    <label required for="bit-positive"><input type="radio" id="bit-positive" name="ratings" value="bit-positive">A Bit Positive</label>
+                    <label required for="fairly-positive"><input type="radio" id="fairly-positive" name="ratings" value="fairly-positive">Fairly Positive</label>
+                    <label required for="bit-negative"><input type="radio" id="bit-negative" name="ratings" value="bit-negative">A Bit Negative</label>
+                    <label required for="very-negative"><input type="radio" id="very-negative" name="ratings" value="very-negative">Very Negative</label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>2. How were we understanding your questions?</legend>
+                    <label required for="exceptionally-well"><input type="radio" id="exceptionally-well" name="understanding" value="exceptionally-well">Exceptionally well</label>
+                    <label required for="very-well"><input type="radio" id="very-well" name="understanding" value="very-well">Very well</label>
+                    <label required for="fairly-well"><input type="radio" id="fairly-well" name="understanding" value="fairly-well">Fairly well</label>
+                    <label required for="not-well"><input type="radio" id="not-well" name="understanding" value="not-well">Not well</label>
+                    <label required for="not-at-all-well"><input type="radio" id="not-at-all-well" name="understanding" value="not-at-all-well">Not at all well</label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>5. Do you have any other queries?</legend>
+                    <textarea name="queries" id="queries" cols="80" rows="5"></textarea>
+                </fieldset>
+            </div>
+        </section>
+        
+    </section>
+</body>
+</html>
