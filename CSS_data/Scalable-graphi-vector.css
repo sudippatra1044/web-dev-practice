@@ -1,0 +1,33 @@
+#svg{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/047/984/471/non_2x/tropical-beach-top-view-photo.jpg);
+}
+
+#path40{
+    stroke: white;
+    stroke-width: 3px;
+    fill: transparent;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: effectText 2s ease-in-out
+        infinite alternate;        
+}
+
+#text1{
+    stroke: white;
+    stroke-width: 3px;
+    fill: transparent;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: effectText 2s ease-in-out
+        infinite alternate;        
+}
+
+@keyframes effectText{
+    from{
+        fill:transparent;
+        stroke-dashoffset:1200;
+    }to{
+        fill: white;
+        stroke-dashoffset: 0;
+    }
+}
