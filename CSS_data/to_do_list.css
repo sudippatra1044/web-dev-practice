@@ -1,0 +1,61 @@
+body {
+  background-color: aliceblue;
+}
+
+.my-todo-list {
+  background-color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 10px;;
+}
+
+.todo-list-title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.box{
+  list-style: none;
+  background-color: rgb(184, 240, 184);
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: -20px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.sub-item {
+  list-style: square;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sub-item-link:link{
+  color:blue;
+}
+
+.sub-item-link {
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.sub-item-link:visited{
+  color: purple;
+}
+
+.sub-item-link:hover{
+  color: red;
+}
+
+.sub-item-link:focus {
+  outline: 1px solid orange;
+}
+
+.sub-item-link:active {
+  color: black;
+}
+
+
