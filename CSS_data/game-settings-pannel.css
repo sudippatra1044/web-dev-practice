@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+.container {
+  max-width: 250px;
+  min-width: 220px;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 2px 2px 5px rgba(143, 143, 143, 0.5), -2px 0 5px rgba(143, 143, 143, 0.5);
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  margin-left: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(240, 156, 2);
+  border-radius: 4px;
+  background-color: white;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgb(250, 180, 51);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+input[type="checkbox"]:hover {
+  border-color: rgb(250, 180, 51);
+  box-shadow: 0 0 4px rgba(250, 180, 51, 0.6);
+}
+
+input[type="checkbox"]:active {
+  transform: scale(0.9);
+}
