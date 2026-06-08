@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  padding: 32px;
+  border-bottom: 4px solid black;
+  background-color: rgb(47, 46, 46);
+  color: #FFF;
+}
+
+.pricing-plan-container {
+  width: 50%;
+  min-width: 210px;
+  max-width: 1400px;
+  border: 2px solid black;
+  margin: 100px auto ;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.plan {
+  padding: 20px;
+  border: 2px solid black;
+  flex: 1 1 190px;
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: scale(1.04);
+}
+
+.basic {
+  background-color: #FFF;
+}
+
+.pro {
+  background-color: rgba(209, 235, 247, 0.5);
+}
+
+.premium {
+  background-color: rgba(224, 250, 222, 0.5);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.price {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(14, 14, 14);
+  border-bottom: 1px solid black;
+  margin: 0 20px 30px;
+}
+
+.key-features {
+  list-style: none;
+  padding-left: 0;
+  line-height: 30px;
+  font-size: 1rem;
+}
+
+.plan-link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  background-color: rgb(244, 201, 28);
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  margin: 25px 0 0;
+}
+
+.plan-link:hover {
+  background-color: rgb(227, 187, 27);
+}
+
+.plan-link:focus {
+  outline: 2px solid rgb(227, 187, 27);
+}
+
+.basic .key-features li:is(:nth-child(1), :nth-child(2))::before {
+  content: "✓";
+  color: rgb(1, 187, 1);
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.basic .key-features li:is(:nth-child(3), :nth-child(4), :nth-child(5))::before {
+  content: "✗";
+  color: rgb(241, 2, 2);
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pro .key-features li:is(:nth-child(1), :nth-child(2), :nth-child(3), :nth-child(4))::before {
+  content: "✓";
+  color: rgb(1, 187, 1);
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pro .key-features li:is(:nth-child(5))::before {
+  content: "✗";
+  color: rgb(241, 2, 2);
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.premium .key-features li:is(:nth-child(1), :nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5))::before {
+  content: "✓";
+  color: rgb(1, 187, 1);
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 5px;
+}
