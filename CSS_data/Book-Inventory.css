@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  max-width: 1440;
+  overflow-x: scroll;
+  text-align: center;
+  border-collapse:collapse;
+}
+
+tr[class="table-head"] {
+  background-image: linear-gradient(#B1E7FC, #76D4F9 70%);
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(#C3FFC3, #9DFF9D 70%);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(#EFF5EF, #DBE7DB 70%);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(#FFEBC2, #FFDF9F 70%);
+}
+
+tr, td, th {
+  padding-block: 0.8rem;
+}
+
+span {
+  display: inline-block
+}
+
+tr[class="read"] span[class="status"] {
+  border: 1px solid #1EC91E;
+  background-image: linear-gradient(#6FEA6F, #29E029 70%);
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid #E61401;
+  background-image: linear-gradient(#FF7568, #FF230F 70%);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid #C2850B;
+  background-image: linear-gradient(#F8CD78, #F3AB1B 70%);
+}
+
+span[class="status"] {
+  width: 90%;
+  height: auto;
+  padding: 0.4rem;
+  border-radius: 30px;
+}
+
+span[class~="rate"] {
+  width: 100px;
+  height: auto;
+  margin: auto;
+  padding: 0.4rem;
+ 
+}
+
+span[class~="rate"] span {
+  border: 1px solid rgb(137, 136, 136);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 2px;
+  background-color: white;
+}
+
+span[class="rate one"] span:first-child {
+  background-image: linear-gradient(#FFE45B, #FFD816 50%);
+}
+
+span[class="rate two"] span:nth-child(-n+2) {
+  background-image: linear-gradient(#FFE45B, #FFD816 50%);
+}
+
+span[class="rate three"] span {
+  background-image: linear-gradient(#FFE45B, #FFD816 50%);
+}
