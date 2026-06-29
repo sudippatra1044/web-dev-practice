@@ -1,0 +1,213 @@
+/* css reset */
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4A4E4F;
+}
+
+h1, h2 {
+  color: black;
+}
+
+/* === Header css === */
+
+h1 {
+ padding-block: 15px;
+ text-align: center;
+ font-weight: normal;
+ font-size: 2rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  text-decoration: none;
+  background: #353535;
+  color: #fff;
+  padding: 8px;
+  outline-color: rgb(228, 226, 226);
+}
+
+#nav-bar {
+  width: 100%;
+  overflow-y: auto;
+  border: 1px solid #4A4E4F;
+}
+
+#nav-bar ul li a[href] {
+  text-decoration: none;
+  color: #4A4E4F;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  border-bottom: 1px solid #4A4E4F;
+  cursor: pointer;
+}
+
+#nav-bar ul li a[href]:hover {
+  background-color: #ededed;
+}
+
+#nav-bar ul li a[href]:focus {
+  outline-color: #6c6e6e;
+  background-color: #ededed;
+}
+
+/* === Main css ===*/
+
+main {
+  padding: 15px 20px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+main section p, ul {
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+section li {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+section code {
+  display: block;
+  margin-bottom: 20px;
+  background-color: #F7F7F7;;
+  padding: 10px;
+  line-height: 20px;
+  font-family: monospace;
+}
+
+/* === Media Query === */
+
+/* 1 */
+
+@media (min-width: 300px) {
+  main {
+    padding: 15px 50px;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+    margin-left: -20px;
+  }
+
+  main section p, ul {
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  section li {
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+}
+
+/* 2 */
+
+@media (min-width: 450px) {
+  /* header css */
+  header {
+    width: 35%;
+    height: 100vh;
+    position: fixed;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  #nav-bar {
+    height: 88%;
+  }
+
+  #nav-bar ul li a[href] {
+    padding: 8px 10px;
+    font-size: 0.95rem;
+  }
+
+
+  /* main css */
+
+  main {
+    width: 65%;
+    margin-left: 35%;
+    border-left: 3px solid #99A2A2;
+    padding-inline: 35px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 3 */
+
+@media (min-width: 780px) {
+  /* header css */
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #nav-bar ul li a[href] {
+    font-size: 1.05rem;
+    padding: 10px 15px;
+  }
+
+  /* main css */
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 30px 50px;
+  }
+}
+
+/* 4 */
+
+@media (min-width: 1200px) {
+  /* header css */
+
+  #nav-bar ul li a[href] {
+    font-size: 1.2rem;
+    padding: 15px 20px;
+  }
+
+  /* main css */
+
+  main {
+    padding: 40px 60px ;
+  }
+}
