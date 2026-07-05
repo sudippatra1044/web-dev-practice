@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS_data/Product-Landing-Page.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" 
+                alt="site logo" 
+                id="header-img">
+        <nav id="nav-bar">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-heading center-alignment">Handcrafted, home-made masterpieces</h1>
+        <form 
+            action="https://www.freecodecamp.org/email-submit" 
+            id="form">
+            <input 
+                type="email" 
+                name="email" 
+                id="email"
+                placeholder="Enter your email address"
+                required>
+            <input 
+                type="submit" 
+                id="submit" 
+                name="submitBtn"
+                value="GET STARTED">
+        </form>
+
+        <div id="features">
+            <div class="symbols">
+                <div class="fire symbol"></div>
+                <div class="truck symbol"></div>
+                <div class="battery symbol"></div>
+            </div>
+            <div class="main-content">
+                <div class="premium-materials center-alignment">
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            </div>
+            <div class="fast-shipping center-alignment">
+                <h2>Fast Shipping</h2>
+                <p>We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            </div>
+            <div class="quality-assurance center-alignment">
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+            </div>
+        </div>
+
+        <iframe  
+            id="how-it-works"
+            src="https://www.youtube.com/embed/y8Yv4pnO7qc?si=R7IEmg2MBykAfMws" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; 
+            autoplay; 
+            clipboard-write; 
+            encrypted-media; 
+            gyroscope; 
+            picture-in-picture;
+            web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+
+        <div id="pricing">
+            <div id="tenor-trombone" class="price-card center-alignment">
+                <h3>Tenor Trombone</h3>
+                <p class="price">$600</p>
+                <ul class="product-features">
+                    <li>Good for beginners</li>
+                    <li>Excellent sound quality</li>
+                    <li>Great for Jazz Bands</li>
+                    <li>Nice and shiny</li>
+                </ul>
+                <button type="submit" class="price-selectBtn">SELECT</button>
+            </div>
+            <div id="bass-trombone" class="price-card center-alignment">
+                <h3>Bass Trombone</h3>
+                <p class="price">$900</p>
+                <ul class="product-features">
+                    <li>Sound quality is unmatched</li>
+                    <li>Best for professionals</li>
+                    <li>Absolutely stunning</li>
+                    <li>Durable and long lasting</li>
+                </ul>
+                <button type="submit" class="price-selectBtn">SELECT</button>
+            </div>
+            <div id="valve-trombone" class="price-card center-alignment">
+                <h3>Valve Trombone</h3>
+                <p class="price">$1200</p>
+                <ul class="product-features">
+                    <li>Plays similar to a Trumpet</li>
+                    <li>Great for Jazz Bands</li>
+                    <li>Beautiful in sound and appearance</li>
+                    <li>Just amazing</li>
+                </ul>
+                <button type="submit" class="price-selectBtn">SELECT</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="../lorem ipsum.txt" id="privacy" class="footer-nav-link">Privacy</a>
+            <a href="../lorem ipsum.txt" id="terms" class="footer-nav-link">Terms</a>
+            <a href="../lorem ipsum.txt" id="contact" class="footer-nav-link">Contact</a>
+        </nav>
+        <p class="copyright">Copyright 2016, Original Trombones</p>
+    </footer>
+</body>
+</html>
