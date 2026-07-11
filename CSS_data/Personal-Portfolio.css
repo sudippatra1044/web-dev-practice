@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root {
+    --navbar-bg: #BE3144;
+    --main-bg: #45567D;
+    --bg2: #303841;
+    --footer-bg: #303841;
+    --gradient-bg1: #383B3E;
+    --gradient-bg2: #1A191B;
+    --main-color: white;
+    --hovered-color: rgb(255, 115, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--main-bg);
+    color: var(--main-color);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Header */
+
+#navbar {
+    width: 100%;
+    height: 10vh;
+    padding-inline: 0px;
+    background-color: var(--navbar-bg);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navlink {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.25rem;
+}
+
+
+
+.navlink:hover, .navlink:focus {
+    background-color: var(--main-bg);
+    outline: none;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, var(--gradient-bg1), var(--gradient-bg2) 70%);
+    padding-top: 10vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1 {
+    height: fit-content;
+    font-size: 3rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    row-gap: 20px;
+}
+
+#welcome-section h1 span {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    font-style: italic;
+    color: #F9C7CF;
+}
+
+
+
+/* Main Body */
+
+#project-section {
+    padding: 4rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(6, 1fr);
+    gap: 2rem;
+}
+
+#project-section h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.project-link figure {
+    height: 100%;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+
+.project-link figcaption {
+    background-color: var(--bg2);
+    padding: 0.75rem;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.hovered {
+    color: var(--bg2);
+    transition: color 0.5s ease;
+}
+
+.project-link:hover span[class="hovered"] {
+    color: var(--hovered-color); 
+}
+
+.show-all {
+    background-color: var(--bg2);
+    width: 50%;
+    padding: 0.75rem 0.25rem;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+.show-all:hover {
+    background-color: var(--navbar-bg);
+}
+
+.show-all-link {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.slide {
+  display: inline-block;
+  font-weight: bolder;
+  transition: transform 0.5s ease;
+}
+
+.show-all:hover .slide {
+    transform: translateX(5px);
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: var(--bg2);
+}
+
+.upper-footer {
+    border-bottom: 5px solid var(--navbar-bg);
+    padding-inline: 2rem;
+}
+
+.upper-footer h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    padding-block: 2rem 0.5rem;
+}
+
+.upper-footer p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+#profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.profile-link {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.35rem;
+    color: var(--navbar-bg);
+    text-shadow: 2px 2px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+
+.profile-link:focus {
+    transform: scale(1.1);
+}
+
+.profile-link:hover {
+    transform: translateY(5px);
+}
+
+.lower-footer {
+    padding: 2rem; 
+    text-align: center;
+}
+
+                             /* Media Queries */
+
+
+@media (min-width: 480px) {
+    #navbar {
+        justify-content: flex-end;
+        padding-inline: 10px;
+    }
+
+    #welcome-section h1 {
+        font-size: 3.5rem;
+    }
+
+    /* main body */
+
+    #project-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(3, 1fr);
+        padding-inline: 2rem;
+    }
+
+    #project-section h2, .show-all {
+        grid-column: span 2;
+    }
+
+    #project-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .project-link figcaption {
+        font-size: 1.25rem;
+    }
+
+    .show-all {
+        width: 30%;
+        font-size: 1.25rem;
+    }
+
+    /* footer */
+
+    .upper-footer h2 {
+        font-size: 2rem;
+    }
+
+    #profile-links {
+        gap: 20px;
+    }
+
+    .profile-link {
+        font-size: 1.75rem;
+    }
+}
+
+
+@media (min-width: 780px) {
+    #navbar {
+        padding-inline: 30px;
+    }
+
+    .navlink {
+        font-size: 1.35rem;
+    }
+
+    #welcome-section h1 {
+        font-size: 3.75rem;
+    }
+
+    #welcome-section h1 span {
+        font-size: 1.75rem;
+    }
+
+    /* main body */
+
+    #project-section {
+        gap: 2.5rem;
+    }
+
+    #project-section h2 {
+        font-size: 2.25rem;
+    }
+
+    .project-image {
+        height: 85%;
+    }
+
+    .project-link figcaption {
+        font-size: 1.3rem;
+        height: 15%;
+    }
+
+    .show-all {
+        width: 20%;
+        font-size: 1.3rem;
+    }
+
+    /* footer */
+
+    .upper-footer h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #navbar {
+        padding-inline: 50px;
+    }
+
+    .navlink {
+        font-size: 1.5rem;
+    }
+
+    #welcome-section h1 {
+        font-size: 4rem;
+    }
+
+    #welcome-section h1 span {
+        font-size: 2rem;
+    }
+
+    /* main body */
+
+    #project-section {
+        gap: 3rem;
+        padding-inline: 3rem;
+    }
+
+    #project-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-image {
+        height: 88%;
+    }
+
+    .project-link figcaption {
+        height: 12%;
+        font-size: 1.5rem;
+    }
+
+    .show-all {
+        padding-block: 1rem;
+        font-size: 1.5rem;
+    }
+
+    /* footer */
+
+    .upper-footer h2 {
+        font-size: 2.5rem;
+    }
+
+    .upper-footer p {
+        font-size: 1.25rem;
+    }
+
+    #profile-links {
+        gap: 25px;
+    }
+
+    .profile-link {
+        font-size: 2.25rem;
+    }
+}
